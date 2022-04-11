@@ -1,0 +1,118 @@
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+}
+
+.singer-input, .song-input {
+    padding: 7px 16px;
+    margin: 1rem .5rem;
+    font-size: 1.2rem;
+    border-radius: 1.2rem;
+    border: none;
+    outline: none
+}
+
+.btn {
+    padding: 10px 19px;
+    font-size: .9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #212121;
+    background-color: #1ed760;
+    border-radius: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease
+}
+
+.btn:hover {
+    transform: scale(1.05)
+}
+
+.info-lyric {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.song {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.singer {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.lyric {
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    white-space: pre;
+}
+
+.loading {
+    margin: 8rem 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid #1ed760;
+    animation: slide 5s infinite
+}
+
+@keyframes slide {
+    0% {
+        transform: scale(1);
+        border: 10px solid #1ed760;
+    }
+
+    25% {
+        transform: scale(0.7);
+        border: 10px solid #fff;
+    }
+
+    50% {
+        transform: scale(0.5);
+        border: 10px solid #2941ab;
+    }
+
+    75% {
+        transform: scale(0.7);
+        border: 10px solid #fff;
+    }
+
+    100% {
+        transform: scale(1);
+        border: 10px solid #1ed760;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .singer-input, .song-input {
+        width: 70%;
+        margin: .5rem 0;
+        text-align: center;
+    }
+}
