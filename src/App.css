@@ -60,7 +60,6 @@
 .lyric {
     margin: 2rem 0;
     text-align: center;
-    line-height: 1.5rem;
     font-size: 1.4rem;
     letter-spacing: 1px;
     white-space: pre;
@@ -111,8 +110,14 @@
     }
 
     .singer-input, .song-input {
-        width: 70%;
+        width: 90%;
         margin: .5rem 0;
         text-align: center;
+    }
+
+    .lyric {
+        font-size: 90%;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 }
